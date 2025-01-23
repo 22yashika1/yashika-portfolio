@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ddd;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#homepage {
+  background: #e9ffe9;
+  padding: 4rem 2rem;
+}
+
+#about {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Darker text for readability */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto;
+  max-width: 800px; /* Restricts the width for better readability */
+  text-align: center; /* Center-aligns the text */
+}
+
+#about h2 {
+  font-size: 28px;
+  color: #0056b3; /* Deep blue for the heading */
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6; /* Improves readability by increasing line spacing */
+  margin: 0 auto;
+  max-width: 600px; /* Restricts the paragraph width */
+}
+
+#about:hover {
+  background-color: #6c9eb5; /* Slightly lighter blue on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+
+#skills {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+
+#skills h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 15px;
+  padding: 10px;
+}
+
+.skill {
+  font-size: 16px;
+  background-color: pink;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill:hover {
+  background-color: #e1e1e1;
+}
+
+#coursework {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #869ea6; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#coursework h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+.coursework-card {
+  background-color: #dee4bb;
+  padding: 15px;
+  border: 1px solid #6a8599;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.coursework-card h3 {
+  font-size: 20px;
+  color: rgb(8, 7, 7);
+  margin-bottom: 10px;
+}
+
+.coursework-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.coursework-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*#coursework .coursework-card:nth-child(odd) {
+  background-color: #f0f8ff; /* Alternate background for odd cards */
+
+.social-links {
+  text-align: center;
+}
+
+.social-links h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.link {
+  display: inline-block;
+  font-size: 16px;
+  color: #0073b1; /* LinkedIn blue */
+  margin: 5px 10px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #075985;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.link:hover {
+  background-color: #216184;
+  color: white;
+}
+
+#contact {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #b9caba;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: #b098b1;
+  border: 2px solid #9b8495;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-item:hover {
+  background-color: #425f85;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item i {
+  font-size: 24px;
+  color: #1e5087;
+  margin-right: 15px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  color: #f9f4f9;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: square;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+  margin: 1rem auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
