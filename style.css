@@ -1,5 +1,5 @@
 /* General Styles */
-body {
+/*body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -36,6 +36,49 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #ddd;
+}*/
+/* General Navigation Bar Styles */
+nav {
+  background-color: green; /* Green background */
+  padding: 10px 0;
+}
+
+.nav-bar {
+  display: flex; /* Arrange items horizontally */
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar li {
+  margin: 0 20px; /* Space between links */
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: yellow;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-wrap: wrap; /* Wrap the navigation links to the next line */
+  }
+
+  .nav-bar li {
+    margin: 10px 10px; /* Adjust margin for smaller spacing */
+  }
+
+  .nav-bar a {
+    font-size: 1rem; /* Slightly reduce font size for small screens */
+  }
 }
 
 section {
@@ -274,3 +317,5 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* new add for mobile screen*/
